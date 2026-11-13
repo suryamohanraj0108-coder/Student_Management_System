@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Management System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="dashboard"><aside class="sidebar">
+            <h2>Student<br> Management System</h2>
+            <nav>
+                <a href="#dashboard">Dashboard</a>
+                <a href="#students">Student Manage</a>
+                <a href="#courses">Course Manage</a>
+                <a href="#professors">Professor Names</a>
+                <a href="#audit"> Project Audit</a>
+                <a href="#orders">Order Manage</a>
+                <a href="#settings">System Manage</a>
+                <a href="#statistics">Financial Statistics</a>
+            </nav></aside>
+        <main class="main-content" id="dashboard">
+            <header class="header">
+                <div class="menu">☰</div>
+                <input type="search" placeholder="Search here...">
+                <div class="profile">
+                    <span> Admin</span></div>
+            </header>
+            <section class="content">
+                <p class="breadcrumb">HOME / DASHBOARD</p>
+                <h2>Welcome Admin!</h2>
+                <div class="stats">
+                    <div class="stat-card orange">
+                        <span> Students</span><h2>987</h2>
+                    </div>
+                    <div class="stat-card purple">
+                        <span>Courses Sold</span><h2>80</h2>
+                    </div>
+                    <div class="stat-card green">
+                        <span>Receivable</span><h2>₹500</h2>
+                    </div>
+                    <div class="stat-card blue">
+                        <span>Received</span><h2>₹2000</h2>
+                    </div>
+                    <div class="stat-card red">
+                        <span>Uncollected</span><h2>₹400</h2>
+                    </div>
+                    <div class="stat-card teal">
+                        <span>Profit</span><h2>₹1,500</h2>
+                    </div>
+                </div>
+                <section class="chart-section">
+                    <div class="section-heading">
+                        <h3>Students Enrolled</h3>
+                        <select>
+                            <option>December</option>
+                            <option>November</option>
+                            <option>October</option>
+                        </select>
+                    </div>
+                    <div class="chart">
+                        <div class="bar" style="--height:20%" data-month="Jan"></div>
+                        <div class="bar" style="--height:60%" data-month="Feb"></div>
+                        <div class="bar" style="--height:100%" data-month="Mar"></div>
+                        <div class="bar" style="--height:40%" data-month="Apr"></div>
+                        <div class="bar" style="--height:70%" data-month="May"></div>
+                        <div class="bar" style="--height:30%" data-month="Jun"></div>
+                        <div class="bar" style="--height:80%" data-month="Jul"></div>
+                        <div class="bar" style="--height:85%" data-month="Aug"></div>
+                        <div class="bar" style="--height:60%" data-month="Sep"></div>
+                        <div class="bar" style="--height:100%" data-month="Oct"></div>
+                        <div class="bar" style="--height:40%" data-month="Nov"></div>
+                        <div class="bar" style="--height:60%" data-month="Dec"></div>
+                    </div>
+                </section>
+                <section class="panel" id="students">
+                    <h3>Add Student</h3>
+                    <form>
+                        <div class="form-grid">
+                            <div>
+                                <label>Student Name</label>
+                                <input type="text" placeholder="Enter student name" required>
+                            </div>
+                            <div>
+                                <label>Admission Number</label>
+                                <input type="text" placeholder="Enter admission number" required>
+                            </div>
+                            <div>
+                                <label>Email Address</label>
+                                <input type="email" placeholder="Enter email address" required>
+                            </div>
+                            <div>
+                                <label>Course</label>
+                                <select required>
+                                    <option value="">Select Course</option>
+                                    <option>Computer Science</option>
+                                    <option>Information Technology</option>
+                                    <option>Cybersecurity</option>
+                                    <option>Artificial Intelligence and Data Science</option>
+                                </select>
+                            </div>
+                        </div>
+                        <button type="submit">+ Add Student</button>
+                    </form>
+                </section>
+                <section class="panel" id="records">
+                    <div class="records-heading">
+                        <h3>Student Records</h3>
+                        <input type="search" placeholder="Search students...">
+                    </div>
+                    <div class="table-container">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Admission No.</th>
+                                    <th>Student Name</th>
+                                    <th>Email</th>
+                                    <th>Course</th>
+                                    <th>Status</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>S001</td>
+                                    <td>Adithya</td>
+                                    <td>adhi@gmail.com</td>
+                                    <td>Computer Science</td>
+                                    <td><span class="active">Active</span></td>
+                                </tr>
+                                <tr>
+                                    <td>S002</td>
+                                    <td>Bhuvana</td>
+                                    <td>bhuvi@gmail.com</td>
+                                    <td>Cybersecurity</td>
+                                    <td><span class="active">Active</span></td>
+                                </tr>
+                                <tr>
+                                    <td>S003</td>
+                                    <td>Jenisha Sivakumar</td>
+                                    <td>jenisha@gmail.com</td>
+                                    <td>Information Technology</td>
+                                    <td><span class="inactive">Inactive</span></td>
+                                </tr>
+                                <tr>
+                                    <td>S004</td>
+                                    <td>Dharanika</td>
+                                    <td>dharani@gmail.com</td>
+                                    <td>Artifical Intelligence and Data Science</td>
+                                    <td><span class="active">Active</span></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </section>
+                <footer>
+                    © 2026 Student Management System | All Rights Reserved
+                </footer>
+            </section>
+        </main> </div>
+</body>
+</html>
